@@ -2,6 +2,7 @@ package br.com.fiap.locatech.locatech.controller;
 
 import br.com.fiap.locatech.locatech.entities.Pessoa;
 import br.com.fiap.locatech.locatech.services.PessoaService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -13,6 +14,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/pessoas")
+@Tag(name = "Pessoa", description = "Controller CRUD Pessoas")
 public class PessoaController {
 
     private static final Logger logger = LoggerFactory.getLogger(PessoaController.class);
